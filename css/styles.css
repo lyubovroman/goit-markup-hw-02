@@ -1,0 +1,80 @@
+/* ццвета на странице #2196F3 голубой, #212121 основнй черні,  #757575-доп серій мелкий шрифт, #FFFFFF- белій,
+в футере тел и міло - rgba(255, 255, 255, 0.6); */
+
+/* стили общие header footet */
+
+header {
+    background-color: #FFFFFF;
+}
+
+.logo-first {
+    color: #2196F3;
+}
+.logo-second {
+    color: #000000;
+}
+
+.list {
+    list-style: none;
+}
+/* site nav */
+.site-nav .link {
+    color: #212121;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: #2196F3; 
+}
+.site-nav .link.current {
+    color: #2196F3;
+}
+/* info nav*/
+.info-nav .link {
+    color: #757575;
+}
+.info-nav .link:hover, .info-nav .link:focus {
+    color: #2196F3;
+}
+
+/* стили для index.html */
+
+
+/* main section class hero */
+.section-hero {
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
+.button.primary {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+/* section-title 2 sections*/
+.section {
+    color: #212121;
+    background-color: #F5F5F5;
+}
+.section-title .p {
+    color: #757575;
+}
+.section-title .list { 
+    list-style: none;
+}
+    
+
+/* section team */
+.section-team {
+    color: #212121;
+        background-color: #F5F4FA;
+}
+.section-team .p {
+    color: #757575;
+}
+.section-team .list {
+    list-style: none;
+}
+.section-team .list-background {
+    background-color: #FFFFFF;
+}
+    
+    
+ /* стили для portfolio.html  */

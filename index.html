@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav>
-        <a href="#" lang="en">Web studio</a>
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="#">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+        <a href="./index.html" class="logo-first" lang="en"
+          >Web<span class="logo-second">Studio</span>
+        </a>
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="link current">Студія</a></li>
+          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="#" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="”tel:+380961111111”">+38(096)111-11-11</a></li>
+      <ul class="info-nav list">
+        <li>
+          <a href="info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+        <li><a href="tel:+380961111111" class="link">+38(096)111-11-11</a></li>
       </ul>
     </header>
     <!-- назві завжди маленькми буквами -->
     <main>
-      <section>
-        <h1>Ефективне рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+      <section class="section-hero">
+        <h1 class="hero-title">Ефективне рішення для вашого бізнесу</h1>
+        <button type="button" class="button primary">Замовити послугу</button>
       </section>
-      <section>
-        <h2>Наші переваги</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">Наші переваги</h2>
+        <ul class="list">
           <li>
             <h3>Увага до діталей</h3>
             <p>
@@ -60,9 +65,9 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Чим ми займаємося</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">Чим ми займаємося</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/hero.jpg"
@@ -82,10 +87,10 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
+      <section class="section-team">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="list">
+          <li class="list-background">
             <img
               src="./images/hero3.jpg"
               alt="Хлопець в окулярах"
@@ -94,7 +99,7 @@
             <h3>Ігор Дем'яненко</h3>
             <p>Product Designer</p>
           </li>
-          <li>
+          <li class="list-background">
             <img
               src="./images/hero4.jpg"
               alt="Дівчина в окулярах"
@@ -103,7 +108,7 @@
             <h3>Ольга Рєпіна</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="list-background">
             <img
               src="./images/hero5.jpg"
               alt="Хлопець в світлій сорочці"
@@ -112,7 +117,7 @@
             <h3>Микола Тарасов</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="list-background">
             <img
               src="./images/hero6.jpg"
               alt="Хлопець в окулярах"
