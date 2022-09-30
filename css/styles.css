@@ -1,14 +1,37 @@
-/* ццвета на странице #2196F3 голубой, #212121 основнй черні,  #757575-доп серій мелкий шрифт, #FFFFFF- белій,
-в футере тел и міло - rgba(255, 255, 255, 0.6); */
+:root{
+    --primary-title-text-color: #212121;
+    --secondary-title-color: #ffffff;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --mail-phone-color:rgba(255, 255, 255, 0.6);
+    };
+
+        /* в футере тел и міло - rgba(255, 255, 255, 0.6); */
+    
+body {
+    background-color: var(--secondary-title-color);
+    color: var(--primary-title-text-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    text-decoration: none;
+}
+body .p {
+    color: var(--primary-text-color);
+}
+
 
 /* стили общие header footet */
 
-header {
-    background-color: #FFFFFF;
-}
+
 
 .logo-first {
-    color: #2196F3;
+    color: var(--accent-color);
+    
 }
 .logo-second {
     color: #000000;
@@ -17,64 +40,110 @@ header {
 .list {
     list-style: none;
 }
+footer {
+    background-color: var(--primary-title-text-color);
+}
+.logo-third {
+    color: var(--secondary-title-color);
+}
+.adress {
+    color: var(--secondary-title-color);
+}
+.mail {
+    color: var(--mail-phone-color);
+}
+.phone {
+    color: var(--mail-phone-color);
+}
+
 /* site nav */
 .site-nav .link {
-    color: #212121;
+    color: var(--primary-title-text-color);
 }
 .site-nav .link:hover, .site-nav .link:focus {
-    color: #2196F3; 
+    color: var(--accent-color); 
 }
 .site-nav .link.current {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 /* info nav*/
 .info-nav .link {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .info-nav .link:hover, .info-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
-
-/* стили для index.html */
+ /* styles for index.html */
 
 
 /* main section class hero */
 .section-hero {
-    color: #FFFFFF;
+    color: var(--secondary-title-color);
     background-color: #2F303A;
 }
 .button.primary {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
+}
+.button.primary:hover, .button.primary:focus {
+    color: var(--secondary-title-color);
+    background-color: #188CE8
 }
 
-/* section-title 2 sections*/
-.section {
-    color: #212121;
-    background-color: #F5F5F5;
+/* section-benefits and section activities*/
+.section-benefits, .section-activities {
+    color: var(--primary-title-text-color);
+    background-color:#F5F5F5;
 }
-.section-title .p {
-    color: #757575;
+.section-benefits .p {
+    color: var(--primary-text-color);
 }
-.section-title .list { 
+.section-benefits .list-title { 
+    color: var(--primary-title-text-color);
     list-style: none;
 }
     
 
+
 /* section team */
 .section-team {
-    color: #212121;
+    color: var(--primary-title-text-color);
         background-color: #F5F4FA;
 }
 .section-team .p {
-    color: #757575;
+    color:  var(--primary-text-color);
 }
 .section-team .list {
     list-style: none;
 }
 .section-team .list-background {
+    background-color: var(--secondary-title-color);
+}
+
+
+
+
+
+ /* styles for portfolio.html  */
+
+ .section-portfolio {
+    background-color: #F5F5F5;
+ }
+ .section-services .button-secondary {
+    color: #212121;
+        background-color: #F5F4FA;
+ }
+    
+ .button-secondary:hover, .button-secondary:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+ }
+.list-img .list-background {
     background-color: #FFFFFF;
 }
-    
-    
- /* стили для portfolio.html  */
+.list-img .img-title {
+    color: var(--primary-title-text-color);
+}
+.list-img .p {
+    color: var(--primary-text-color);;
+}
