@@ -14,9 +14,10 @@ body {
     font-family: Roboto; sans-serif;
 }
 
-body .p {
-    color: var(--primary-text-color);
+ul {
+    list-style: none;
 }
+
 
 
 /* стили общие header footet */
@@ -30,9 +31,9 @@ body .p {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        text-decoration: none;
-    
-}
+        text-decoration: none;      
+    }
+
 .logo-second {
     color: #000000;
     font-family: Raleway; sans-serif;
@@ -43,13 +44,17 @@ body .p {
         text-decoration: none;
 }
 
-.list {
-    list-style: none;
-}
+
 footer {
     background-color: var(--primary-title-text-color);
+        font-size: 14px;
+        line-height: 1.71;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            font-style: normal;
 }
-.logo-third {
+
+ .footer-link .logo-second {
     color: var(--secondary-title-color);
     font-family: Raleway;sans-serif;
         font-weight: 700;
@@ -58,20 +63,23 @@ footer {
         letter-spacing: 0.03em;
         text-decoration: none;
     }
-.adress {
-    color: var(--secondary-title-color);
     
+.address {
+    color: var(--secondary-title-color);
         font-size: 14px;
-        line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+        line-height: 1.71px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        font-style: normal;
 }
+
 .mail {
     color: var(--mail-phone-color);
         font-size: 14px;
         line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    font-style: normal;
 }
 .phone {
     color: var(--mail-phone-color);
@@ -79,8 +87,15 @@ footer {
         line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    font-style: normal;
+}
+.mail:hover , .mail:focus {
+    color: var(--accent-color);
 }
 
+.phone:hover, .phone:focus {
+    color: var(--accent-color);
+}
 /* site nav */
 .site-nav .link {
     color: var(--primary-title-text-color);
@@ -112,38 +127,48 @@ footer {
 
 
 /* main section class hero */
-.section-hero {
-    color: var(--secondary-title-color);
+.section-hero{
     background-color: #2F303A;
-        font-weight: 400;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
+}
+.section-hero .hero-title {
+    color: var(--secondary-title-color);
+  
+        font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         
 }
-.button.primary {
+.button-primary {
     color: var(--secondary-title-color);
     background-color: var(--accent-color);
+        font-family: inherit;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
+        cursor: pointer;
         display: flex;
-        align-items: center;
-        text-align: center;
+            align-items: center;
+            text-align: center;
+      
+       
+        cursor: pointer
     letter-spacing: 0.06em;
 }
-.button.primary:hover, .button.primary:focus {
+.button-primary:hover, .button-primary:focus {
     color: var(--secondary-title-color);
     background-color: #188CE8
 }
 
 /* section-benefits and section activities*/
+
 .section-benefits, .section-activities {
     color: var(--primary-title-text-color);
     background-color:#F5F5F5;
-    letter-spacing: 0.03em;
 }
+
 .section-benefits .p {
     color: var(--primary-text-color);
         font-size: 14px;
@@ -152,74 +177,86 @@ footer {
 }
 .section-benefits .list-title { 
     color: var(--primary-title-text-color);
-    list-style: none;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
-        text-transform: uppercase;
+        text-transform: uppercase; }
     
 
 
 /* section team */
+
 .section-team {
     color: var(--primary-title-text-color);
         background-color: #F5F4FA;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.16;
-            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
             letter-spacing: 0.03em;
 }
 .section-team .p {
     color:  var(--primary-text-color);
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.18;
-        text-align: center;
         letter-spacing: 0.03em;
 }
-.section-team .list {
-    list-style: none;
-}
+
 .section-team .list-background {
     background-color: var(--secondary-title-color);
 }
 
 
 
-
-
  /* styles for portfolio.html  */
+
+ .visually-hidden {
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+ }
 
  .section-portfolio {
     background-color: #F5F5F5;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-    letter-spacing: 0.03em;
+    
  }
- .section-services .button-secondary {
+
+  .button-secondary {
     color: var(--primary-title-text-color);
         background-color: #F5F4FA;
+        font-family: inherit;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.62;
+            letter-spacing: 0.03em;
  }
     
- .button-secondary:hover, .button-secondary:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
- }
+.button-secondary:hover, .button-secondary:focus {
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color)
+}
+
 .list-img .list-background {
     background-color: #FFFFFF;
 }
 .list-img .img-title {
-    color: var(--primary-title-text-color);
+       color: var(--primary-title-text-color);
         font-weight: 700;
         font-size: 18px;
         line-height: 2px;
-    letter-spacing: 0.06em;
+       letter-spacing: 0.06em;
 }
-.list-img .p {
+.list-img .p {  
     color: var(--primary-text-color);
-    letter-spacing: 0.03em;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.03em;
 }
