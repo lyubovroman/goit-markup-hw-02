@@ -11,13 +11,21 @@
 body {
     background-color: var(--secondary-title-color);
     color: var(--primary-title-text-color);
-    font-family: Roboto; sans-serif;
+    font-family: Roboto. sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
 
 ul {
     list-style: none;
+}
+a {
+text-decoration: none;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
 }
 
 
@@ -29,10 +37,9 @@ ul {
 .logo-first {
     color: var(--accent-color);
     font-family: Raleway; sans-serif;
-       
         font-size: 26px;
         line-height: 1.19;
-        text-decoration: none;      
+            
     }
 
 .logo-second {
@@ -41,7 +48,7 @@ ul {
        
         font-size: 26px;
         line-height: 1.19;
-        text-decoration: none;
+        
 }
 
 
@@ -54,30 +61,27 @@ footer {
 
  .footer-link .logo-second {
     color: var(--secondary-title-color);
-    font-family: Raleway;sans-serif;
-       
+    font-family: Raleway. sans-serif;
         font-size: 26px;
         line-height: 1.19;
-        text-decoration: none;
     }
     
 .address {
     color: var(--secondary-title-color);
         line-height: 1.71px;
-        text-decoration: none;
         font-style: normal;
 }
 
 .mail {
     color: var(--mail-phone-color);
         line-height: 1.71;
-    text-decoration: none;
+    font-style: normal;
    
 }
 .phone {
     color: var(--mail-phone-color);
         line-height: 1.71;
-    text-decoration: none;
+    font-style: normal;
    
 }
 .mail:hover , .mail:focus {
@@ -93,7 +97,6 @@ footer {
         font-weight: 500;
         line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--accent-color); 
@@ -107,7 +110,6 @@ footer {
         font-weight: 500;
         line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 .info-nav .link:hover, .info-nav .link:focus {
     color: var(--accent-color);
@@ -133,15 +135,12 @@ footer {
 .button-hero {
     color: var(--secondary-title-color);
     background-color: var(--accent-color);
-        font-family: inherit;
-        font-weight: 700;
+       font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        cursor: pointer;
         display: flex;
         align-items: center;
         text-align: center;
-        cursor: pointer;
         letter-spacing: 0.06em;
 }
 .button-hero:hover, .button-hero:focus {
@@ -152,7 +151,7 @@ footer {
 /* section-benefits and section activities*/
 
 .section-benefits, .section-activities {
-    background-color: #F5F5F5;
+    background-color: var(--secondary-title-color);
 }
 
 .text-benefits {
@@ -161,13 +160,11 @@ footer {
 }
 
 .list-benefits { 
-        font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase; 
     }
 
 .title-activities {
-            font-weight: 700;
             font-size: 36px;
             line-height: 1.16;
     }
@@ -182,7 +179,6 @@ footer {
 }
 
 .title-team {
-       font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
 }
@@ -228,8 +224,6 @@ footer {
   .button-secondary {
     color: var(--primary-title-text-color);
         background-color: #F5F4FA;
-        font-family: inherit;
-            cursor: pointer;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.62;
@@ -245,7 +239,6 @@ footer {
 }
 .title-portfolio{
        color: var(--primary-title-text-color);
-        font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
